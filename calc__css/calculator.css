@@ -1,0 +1,1187 @@
+body{
+	background: #111 !important;
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.persons_one.col {
+	padding: 0;
+	position: relative;
+}
+
+
+
+* {
+	margin        : 0;
+	padding       : 0;
+	border        : 0;
+	font-size     : 100%;
+	vertical-align: baseline;
+	background    : transparent;
+	box-sizing    : border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing        : border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.df {
+	display  : -webkit-flex;
+	display  : -moz-flex;
+	display  : -ms-flex;
+	display  : -o-flex;
+	display  : flex;
+	flex-wrap: wrap;
+
+
+
+}
+
+
+
+.mydefStyle {
+	-webkit-justify-content: space-between;
+	/* (по ширине) по краям flex-контейнера*/
+	justify-content        : space-between;
+	/* (по ширине) по краям flex-контейнера*/
+
+
+	-webkit-justify-content: space-around;
+	/* (по ширине)  с равным интервалом вокруг каждого flex-элемента*/
+	justify-content        : space-around;
+	/* (по ширине) с равным интервалом вокруг каждого flex-элемента*/
+
+
+	-webkit-align-items: center;
+	/* (по высоте) Flex-элементы укладываются по центру поперечной оси flex-контейнера.*/
+	align-items        : center;
+	/* (по высоте) Flex-элементы укладываются по центру поперечной оси flex-контейнера.*/
+
+}
+
+
+
+
+.CTW {
+	width    : 100%;
+	max-width: 480px;
+	max-width: 460px;
+	padding  : 10px;
+
+	display  : -webkit-flex;
+	display  : -moz-flex;
+	display  : -ms-flex;
+	display  : -o-flex;
+	display  : flex;
+	flex-wrap: wrap;
+	margin   : 15px auto;
+	/* overflow: hidden; */
+}
+
+
+.CTW button, 
+.CTW input, 
+.CTW select {
+	-webkit-appearance: auto;
+	-moz-appearance: auto;
+	appearance: auto;
+}
+
+
+
+.CTW__row {
+	margin-top     : 15px;
+	flex           : 1 0 100%;
+	justify-content: space-between;
+
+	display  : -webkit-flex;
+	display  : -moz-flex;
+	display  : -ms-flex;
+	display  : -o-flex;
+	display  : flex;
+	flex-wrap: wrap;
+
+}
+
+
+.CTW__form{
+	width: 100%;
+}
+
+
+.voice__face {
+	position: relative;
+}
+
+.voice__face:before {
+	content            : "";
+	position           : absolute;
+	z-index            : 10;
+	width              : 32px;
+	height             : 32px;
+	background-position: center center;
+	background-size    : contain;
+	background-repeat  : no-repeat;
+	background-image   : url("../calc__img/microphone.webp");
+
+	color : #00D45D;
+	bottom: -7px;
+	left  : -12px;
+
+}
+
+
+.voice__time__duration {
+	font-size: 14px;
+}
+
+.CTW__text6 {
+	font-size : 11px;
+	flex      : 1 0 100%;
+	margin-top: -25px;
+	text-align: center;
+	font-style: italic;
+}
+
+
+
+.voice__faceImg {
+	display      : inline-block;
+	width        : 50px;
+	height       : 50px;
+	border-radius: 100px;
+	position     : relative;
+	z-index      : 5;
+}
+
+
+@media only screen and (max-width : 370px) {
+	.voice__wave div {
+		width: 3px;
+	}
+
+	.CTW__text6 {
+		margin-left: 5px;
+		margin-top : -10px;
+	}
+
+	.voice__toggle {
+		width : 40px;
+		height: 40px;
+	}
+
+	.voice__toggle:after {
+		border       : 12px solid transparent;
+		border-bottom: 18.5px solid white;
+	}
+
+	.voice__faceImg {
+		width : 42px;
+		height: 42px;
+	}
+
+
+}
+
+
+
+.CTW__text1 {
+	font-size  : 19px;
+	padding    : 5px;
+	font-weight: 700;
+	flex       : 1 0 100%;
+}
+
+.CTW__input,
+.CTW__textarea {
+	border       : solid 6px #00D45D;
+	font-size    : 19px;
+	padding      : 20px;
+	width        : 100%;
+	border-radius: 10px;
+	font-style   : italic;
+
+
+	min-height: 40px;
+
+
+
+
+
+}
+
+
+.CTW__input {
+
+}
+
+.CTW__input_tel{
+	padding-left: 65px;
+
+	background-position: center left 10px;
+	background-size    : 40px 22px;
+	background-repeat  : no-repeat;
+	background-image   : url("../calc__img/flag_mediumThumb.jpg");
+
+}
+
+.CTW__textarea {
+	min-height: 160px;
+}
+
+
+.CTW__input_name{
+
+
+	background-position: center left 9px, center center;
+	background-size    : 26px 26px, contain;
+	background-repeat  : no-repeat, no-repeat;
+
+
+
+
+}
+
+.CTW__textarea_adress{
+	padding-right: 20px;
+	background-position: top 10px left 9px, center center;
+	background-size    : 26px 26px, contain;
+	background-repeat  : no-repeat, no-repeat;
+
+
+
+
+}
+
+
+
+.CTW__bonus {
+	flex  : 0 0 200px;
+	margin: 10px;
+}
+
+.CTW__text2 {
+	font-size     : 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+.CTW__bonus_wrapImg {
+	width              : 100%;
+	height             : 70px;
+	background-position: center center;
+	background-size    : cover;
+	background-repeat  : no-repeat;
+	position           : relative;
+	margin-top         : 5px;
+	border-radius      : 4px;
+
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #FFFFFF;
+	box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 15%);
+
+
+
+
+}
+
+.CTW__bonus_wrapImg_1 {
+	background-image: url("../calc__img/img1.webp");
+
+	justify-content: end;
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;   
+	 -webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+}
+
+.CTW__bonus_wrapImg_2 {
+	background-image: url("../calc__img/img2.webp");
+justify-content: end;
+-webkit-justify-content: flex-end;
+-ms-flex-pack: end;
+justify-content: flex-end;   
+ -webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+
+}
+
+.CTW__bonus_wrapImg::before {
+	content            : "";
+	position           : absolute;
+	z-index            : 7;
+	width              : 35px;
+	height             : 35px;
+	background-position: center center;
+	background-size    : cover;
+	background-repeat  : no-repeat;
+	background-image   : url("../calc__img/img3.webp");
+	top                : -15px;
+	right              : -15px;
+}
+
+.CTW__bonus_wrapImg::after {
+	content    : "";
+	position   : absolute;
+	z-index    : 6;
+	width      : 100%;
+	height: 100%;
+	display    : block;
+	top        : 0px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.8+100 */
+background: -moz-linear-gradient(45deg,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.CTW__bonus_text{
+	position: relative;
+	z-index: 8;
+	color: #fff;
+	text-align: right;
+	padding: 5px 15px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+
+@media only screen and (max-width : 480px) {
+	.CTW__bonus {
+		flex  : 0 0 200px;
+		margin: 10px ;
+	}
+
+	.CTW__bonus_wrapImg {
+		height: 70px;
+	}
+}
+
+@media only screen and (max-width : 370px) {
+	.CTW__bonus {
+		flex: 0 0 138px;
+	}
+
+	.CTW__bonus_wrapImg {
+		height: 45px;
+	}
+}
+
+.CTW__wrapTypePay {
+	flex: 0 0 50%;
+}
+
+.CTW__wrapText {
+	flex: 0 0 50%;
+
+}
+
+.CTW__text4 {
+	display     : inline-block;
+	padding-left: 8px;
+	font-size   : 15px;
+	color       : #565656;
+}
+
+.CTW__label_TypePay {
+	width: 100%;
+
+	margin     : 8px 0;
+	display    : flex;
+	align-items: center;
+
+
+
+}
+
+.CTW__text4 {}
+
+
+
+.CTW__input_radio {
+	accent-color: #25ab31;
+	font-size   : 20px;
+	width       : 22px;
+	height      : 22px;
+	flex        : 0 0 22px;
+}
+
+.CTW__wrapText {
+	color      : #00D45D;
+	align-items: center;
+	opacity: 1;
+	transition: 0.2s;
+
+}
+
+.CTW__wrapText.hide{
+	opacity: 0;
+	transition: 0.2s;
+}
+
+
+.CTW__wrapText_price {
+	flex           : 1 0 100%;
+	align-items    : flex-start;
+	justify-content: flex-end;
+	margin-top     : auto;
+}
+
+.CTW__wrapText_month {
+	flex           : 1 0 100%;
+	align-items    : flex-start;
+	justify-content: flex-end;
+	font-size      : 16px;
+	font-weight    : 700;
+
+}
+
+.CTW__wrapText_price_1 {
+	font-size  : 16px;
+	font-weight: 700;
+}
+
+.CTW__wrapText_price_2 {
+	font-size  : 38px;
+	font-weight: 700;
+	margin-left: 5px;
+
+}
+
+
+.CTW__wrapQant {
+	flex: 0 0 50%;
+}
+
+
+
+.inst__button{
+	background: linear-gradient(45deg,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+		border: none;
+		color: white;
+		padding: 11px 18px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 15px;
+		margin: 15px 11px 11px 300px;
+		border-radius: 54px;
+		box-shadow: rgb(132 58 178) 0 5px 15px;
+		z-index: 5;
+		position: relative;
+}
+.inst__button:hover{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.CTW__row_wrapButton {
+	position : fixed;
+
+	z-index  : 100;
+	bottom   : 0;
+	width    : calc(100% - 0px);
+	max-width: 440px;
+
+}
+
+.CTW__row_wrapButton {}
+
+.CTW__btn {
+	flex            : 0 0 50%;
+	background-color: #00D45D;
+	color           : #fff;
+	height          : 80px;
+	border          : 1px solid #fff;
+	align-items     : center;
+	align-content   : center;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.CTW__btn:hover {
+	color          : #fff;
+	text-decoration: none;
+}
+
+
+
+.CTW__btn_text1 {
+	flex       : 1 0 100%;
+	font-size  : 17px;
+	font-weight: 700;
+	align-self : center;
+	text-align: center;
+
+	font-weight: 500;
+	font-style: normal;
+
+
+}
+
+.CTW__btn_text2 {
+	flex      : 1 0 100%;
+	font-size : 13px;
+	align-self: center;
+	text-align: center;
+
+	font-weight: 500;
+	font-style: normal;
+
+
+}
+
+.CTW__btn_1 {
+	border-radius: 16px 0 0 16px;
+	justify-content: end;
+	padding-left: 38px;
+	background-position: 15px 15px;
+	background-size: 43px 43px;
+	background-repeat: no-repeat;
+	background-image   : url("../calc__img/icons8-whatsapp.svg");
+
+}
+
+.CTW__btn_2 {
+	border-radius: 0px 16px 16px 0px;
+	justify-content: start;
+	padding-right: 38px;
+	background-position: 172px 15px;
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-image   : url("../calc__img/icons8-shopping-bag-50.png");
+}
+
+
+@media only screen and (max-width : 370px) {
+
+	.CTW__btn {
+		height: 60px;
+	}
+
+
+	.CTW__btn_text1 {
+		font-size: 14px;
+	}
+
+
+	.CTW__btn_1 {
+		padding-left   : 32px;
+		background-position: center left 8px;
+		background-size    : 20px 20px;
+	}
+		.CTW__btn_2 {
+		padding-right  : 32px;	
+		background-position: center right 8px;
+		background-size    : 20px 20px;
+		}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.CTW__text10{
+	flex: 1 0 100%;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	transform: translateY(-8px);
+	font-style: italic;
+}
+
+
+.App {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 4px 2px;
+	border: solid 6px #00D45D;
+	border-radius: 10px;
+	justify-content: center;
+	height: 75px;
+}
+
+.AudioMessage {
+  width: 340px;
+	/* width: 96%; */
+  display: flex;
+  align-items: center;
+}
+.h3{
+	margin-top: 20px;
+}
+
+@media only screen and (max-width : 370px) {
+	.App {
+		flex: 0 0 calc(100% - 20px);
+		width: calc(100% - 20px);
+	}
+	
+	.AudioMessage {
+		width: 300px;
+	}
+}
+
+
+
+
+.AudioMessage:not(.AudioMessage--active) .AudioMessage__speedToggle {
+  display: none;
+}
+.AudioMessage--active .AudioMessage__playToggle::before,
+.AudioMessage--active .AudioMessage__playToggle::after {
+  transform: translateX(0);
+}
+.AudioMessage--active .AudioMessage__playToggle::before {
+  clip-path: polygon(5% 0%, 35% 0%, 35% 100%, 5% 100%);
+}
+.AudioMessage--active .AudioMessage__playToggle::after {
+  clip-path: polygon(65% 0%, 95% 0%, 95% 100%, 65% 100%);
+}
+.AudioMessage__playToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  appearance: none;
+  background: #00D45D;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.AudioMessage__playToggle:focus {
+  outline: none;
+}
+.AudioMessage__playToggle:hover {
+  background-color: #00D45D;
+}
+.AudioMessage__playToggle:active {
+  background-color: #0da951;
+}
+.AudioMessage__playToggle::before,
+.AudioMessage__playToggle::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: white;
+  transition: 0.1s ease-in-out;
+  transition-property: clip-path, transform;
+  transform: translateX(2px);
+}
+.AudioMessage__playToggle::before {
+  clip-path: polygon(0% 0%, 50% 25%, 50% 75%, 0% 100%);
+}
+.AudioMessage__playToggle::after {
+  clip-path: polygon(50% 25%, 100% 50%, 100% 50%, 50% 75%);
+}
+.AudioMessage__wave {
+  flex-grow: 1;
+  margin: 0 8px;
+  cursor: pointer;
+}
+.AudioMessage__info {
+  display: flex;
+  flex-direction: column;
+}
+.AudioMessage__time {
+  color: #999;
+  font-size: 14px;
+	transform: translateY(23px);
+}
+.AudioMessage__speedToggle {
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  border-radius: 4px;
+  border: none;
+  background: #e4e4e4;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #888888;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  transition-property: background-color, color;
+}
+.AudioMessage__speedToggle:hover,
+.AudioMessage__speedToggle:focus {
+  background-color: #dddddd;
+}
+.AudioMessage__speedToggle:active {
+  background-color: #d0d0d0;
+  color: #777777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .wrap {
+  width: 500px;
+  margin: auto;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 #c9ced1;
+  padding: 1.25rem; } */
+
+.iti {
+  width: 100%; }
+
+
+	.form-group{
+		width: 100%;
+	}
+
+
+
+
+
+
+
+
+
+
+.CTW__text3 {
+	margin     : 10px;
+	font-size  : 14px;
+	text-align : center;
+	color      : #646464;
+	flex       : 1 0 100%;
+	font-weight: 700;
+}
+
+
+.CTW__text7 {
+	margin    : 15px 0;
+	font-size : 16px;
+	text-align: center;
+
+	color: rgb(23, 23, 23);
+	flex : 1 0 100%;
+
+
+}
+
+
+.CTW__text5 {
+	padding         : 2px 6px;
+	border-radius   : 3px;
+	margin          : 0 5px;
+	background-color: rgb(50, 163, 194);
+	color           : #fff;
+}
+
+.CTW__wrapUser {
+	text-align     : center;
+	flex           : 1 0 100%;
+	justify-content: center;
+
+
+}
+
+.CTW__UserImg {
+	display      : inline-block;
+	width        : 60px;
+	height       : 60px;
+	border-radius: 100px;
+	margin-right : -5px;
+	border       : solid 2px #fff;
+	box-shadow   : 0 0 4px 1px #33333380;
+}
+
+.CTW__lastUser {
+	border          : solid 2px #fff;
+	box-shadow      : 0 0 8px 1px #33333380;
+	width           : 60px;
+	height          : 60px;
+	background-color: rgb(181, 181, 181);
+	color           : #646464;
+	border-radius   : 100px;
+	justify-content : center;
+	align-items     : center;
+
+}
+
+
+
+
+
+
+
+
+
+/* счетчик +/- */
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance   : none;
+	appearance        : none;
+	margin            : 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+
+.CTW__quantity_block {
+	/*  margin: auto;
+font-size: 20px;*/
+	/* display    : flex; */
+	display    : inline-flex;
+	align-items: center;
+	margin     : 8px 0;
+	height     : 40px;
+
+
+
+}
+
+
+.CTW__dopInfo_block_option {
+	height    : 0px;
+	opacity   : 0;
+	overflow  : hidden;
+	margin    : 0 0 0 60px;
+	transition: 0.2s;
+}
+
+.CTW__dopInfo_block_option.show {
+	height    : 50px;
+	opacity   : 1;
+	margin    : 10px 0 15px 60px;
+	transition: 0.2s;
+}
+
+
+
+.CTW__quantity_arrow_minus,
+.CTW__quantity_arrow_plus {
+	flex       : 0 0 50px;
+	height     : 50px;
+	color      : #00D45D;
+	cursor     : pointer;
+	font-size  : 36px;
+	line-height: 1;
+
+	outline         : none;
+	display         : inline-block;
+	border          : solid 1px #00D45D;
+	font-weight     : 400;
+	background-color: #fff;
+	transition      : all 0.2s;
+	overflow        : hidden;
+
+}
+
+.CTW__quantity_arrow_minus {
+	border-radius: 10px 0 0 10px;
+padding-bottom: 5px;
+line-height  : 0.4;
+border-top: 3px solid #00D45D;
+border-left: 3px solid #00D45D;
+border-bottom: 3px solid #00D45D;
+}
+
+.CTW__quantity_arrow_plus {
+	border-radius: 0 10px 10px 0;
+	border-top: 3px solid #00D45D;
+border-right: 3px solid #00D45D;
+border-bottom: 3px solid #00D45D;
+
+}
+
+.CTW__quantity_arrow_minus:hover,
+.CTW__quantity_arrow_plus:hover {
+	background-color: #fff;
+	border          : solid 1px #00D45D;
+	cursor          : pointer;
+	color           : #00D45D;
+	transition      : all 0.2s;
+}
+
+.CTW__InputQuantity {
+	max-width    : 80px;
+	flex         : 0 0 80px;
+	/* margin    : 0 4px; */
+	padding      : 0 5px;
+	font-size    : 20px;
+	color        : #323232;
+	height       : 50px;
+	text-align   : center;
+	border-top : solid 3px #00D45D;
+	border-bottom : solid 3px #00D45D;
+
+}
+#inputCalcTelUser{
+	padding: 30px;
+	font-size: 21px;
+}
+
+.CTW__InputQuantity:focus {
+
+	box-shadow: 0 0 5px 1px #00D45D;
+	transition: 0.2s;
+	outline   : none;
+}
+
+
+.CTW__text5 {
+	font-size    : 17px;
+	text-align   : center;
+	font-weight  : 400;
+	line-height  : 1;
+	margin-bottom: 5px;
+	color        : #383838;
+}
+
+
+/* счетчик +/- */
+
+
+
+
+
+
+
+
+
+
+
+
+.ProgressBar {
+	height            : 8px;
+	-webkit-box-shadow: inset 2px 3px 7px rgba(0, 0, 0, 0.05);
+	box-shadow        : inset 2px 3px 7px rgba(0, 0, 0, 0.05);
+	border-radius     : 1.8rem;
+	background-color  : #fcfaf3;
+	flex              : 1 0 50%;
+	/*min-width       : 320px;	*/
+	overflow          : hidden;
+	position          : relative;
+	margin-top       : 8px;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow   : 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+	box-shadow        : 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.ProgressBarInner {
+	position          : absolute;
+	left              : 0;
+	-webkit-box-shadow: inset 2px 3px 7px rgba(0, 0, 0, 0.05);
+	box-shadow        : inset 2px 3px 7px rgba(0, 0, 0, 0.05);
+	top               : 0;
+	height            : 100%;
+	width             : 0%;
+	display           : -webkit-box;
+	display           : -ms-flexbox;
+	display           : flex;
+	-webkit-box-align : center;
+	-ms-flex-align    : center;
+	align-items       : center;
+	-webkit-box-pack  : center;
+	-ms-flex-pack     : center;
+	justify-content   : center;
+	background-color  : #ff7c00;
+	/* background-image  : -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgb(251, 255, 0))), repeating-linear-gradient(-55deg, #ffd200, transparent 6px, rgb(255, 207, 0) 5px, #ff631e 5px); */
+	background-image  : -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(167, 42, 161) 100%), -webkit-repeating-linear-gradient(145deg, #d900ff, transparent 6px, #e615ce 5px, #46084c 5px);
+	background-image  : -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(167, 42, 161) 100%), -o-repeating-linear-gradient(145deg, #d900ff, transparent 6px, #e615ce 5px, #46084c 5px);
+	background-image  : linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(167, 42, 161) 100%), repeating-linear-gradient(-55deg, #d900ff, transparent 6px, #e615ce 5px, #46084c 5px);
+	-webkit-animation : progres 2.8s linear infinite;
+	animation         : progres 2.8s linear infinite;
+	-webkit-transition: width 0.4s;
+	-o-transition     : width 0.4s;
+	transition        : width 0.4s;
+}
+
+.progressBarText__wrap {
+	font-size  : 14px;
+	color      : rgb(33, 33, 33);
+	font-weight: 400;
+	flex: 0 0 100%;
+}
+
+.progressBarText{
+color: #d135e0;
+font-weight: 700;
+}
+
+@-webkit-keyframes progres {
+	from {
+		background-position: 0 0, 0 0;
+	}
+
+	to {
+		background-position: 0 0, 60px 30px;
+	}
+}
+
+@keyframes progres {
+	from {
+		background-position: 0 0, 0 0;
+	}
+
+	to {
+		background-position: 0 0, 60px 30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+.blick{
+  position: absolute;
+  overflow: hidden;
+  height: 78px;
+  transform: translateX(0px);
+  width: 435px;
+  width: 50%;
+  z-index: 10;
+  pointer-events: none;
+}
+.blick:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 300px;
+  margin-left: 60px;
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0.7) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ffffff', endColorstr='#b3ffffff',GradientType=0 );
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  z-index: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: slideme;
+  animation-name: slideme;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes slideme {
+  0% { left: -30px; margin-left: 0px; }
+  30% { left: 150%; margin-left: 80px; }
+  100% { left: 150%; margin-left: 80px; }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1199px) {}
+
+@media only screen and (max-width : 991px) {}
+
+@media only screen and (max-width : 767px) {}
+
+@media only screen and (max-width : 575px) {}
+
+@media only screen and (max-width : 480px) {}
+
+@media only screen and (max-width : 375px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+	outline: solid red 0px;
+}
